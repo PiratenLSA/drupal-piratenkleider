@@ -1,0 +1,76 @@
+/* 
+    Backend CSS
+*/
+
+
+label.description {
+    display: block;
+}
+
+
+p.submit {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.wrap div.updated {
+    margin-right: 300px;                    
+}
+#einstellungen {
+    margin-top: 20px;
+}
+#einstellungen div {
+    margin-left: 10px;
+}
+#einstellungen table tr:hover,
+#einstellungen table tr:focus {
+    background-color: #eeeeee;
+    -webkit-transition: all 0.1s ease-in-out;
+  -moz-transition: all 0.1s ease-in-out;
+  -ms-transition: all 0.1s ease-in-out;
+  -o-transition: all 0.1s ease-in-out; 
+  transition: all 0.1s ease-in-out;
+}
+#einstellungen table th {
+    text-align: left;   
+    min-width: 200px;
+}
+#einstellungen table td {
+    padding-bottom: 5px;
+}
+
+#einstellungen table td table th {
+    min-width: 50px;
+}
+
+#einstellungen input.regular-text {
+    width: 30em;
+}
+#einstellungen select {
+    min-width: 4em;
+}
+h2.nav-tab-wrapper, h3.nav-tab-wrapper {
+    margin-top: 30px;
+}
+
+label.tile {
+    width: 320px;
+    height: 150px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 1px;
+    margin: 5px;
+}
+label.tile:hover {
+    background-color: #eee;
+}
+label.plakattile {
+    width: 160px;
+    height: 250px;
+    float: left;
+    border: 1px solid #ccc;
+    padding: 1px;
+    margin: 5px;
+}
+label.plakattile:hover {
+    background-color: #eee;
+} 

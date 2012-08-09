@@ -1,0 +1,31 @@
+
+name = Piratenkleider
+description = A responsive theme created for piratenpartei.de
+package = Core
+version = VERSION
+core = 7.x
+
+scripts[] = js/jquery.min.js
+scripts[] = js/jquery.flexslider-min.js
+scripts[] = js/dynamic-sidebar.js
+scripts[] = js/layout.js
+
+stylesheets[all][] = yaml/core/base.min.css
+stylesheets[all][] = css/piratenkleider.css
+stylesheets[all][] = css/basemod_navigation.css
+stylesheets[all][] = css/basemod_slider.css
+stylesheets[all][] = css/basemod_mediaqueries.css
+stylesheets[all][] = css/basemod_linkicons.css
+stylesheets[all][] = css/basemod_ymbuttons.css
+stylesheets[all][] = css/drupal.css
+stylesheets[print][] = css/print.css
+stylesheets-conditional[lt IE 7][all][] = yaml/core/iehacks.min.css
+
+regions[sticker] = sticker
+regions[slideshow] = slideshow (frontpage only)
+regions[shortlinks] = shortlinks (frontpage only)
+regions[social] = social media
+regions[content] = main content
+regions[sidebar_first] = sidebar
+regions[siteinfo] = siteinfo
+regions[footer] = footer
