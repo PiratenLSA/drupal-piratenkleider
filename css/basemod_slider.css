@@ -1,46 +1,46 @@
 /*
 * CSS Slider Definitionen
-* 
+*
 * @Theme Name: Piratenkleider
 * @Theme URI: https://github.com/xwolfde/Piratenkleider
 * @Description: Allgemeines Wordpress Theme für Webauftritte der Piratenpartei
 * @Author: Wolfgang Wiese (xwolf)
-* @Author URI: http://www.xwolf.de 
+* @Author URI: http://www.xwolf.de
 */
 
 .flexslider {
   width: 100%;
   margin: 0;
   padding: 0;
-  position: relative; 
-  height: 240px;  
+  position: relative;
+  height: 240px; 
   overflow: hidden;
     /* Bilder die trotz cropping hoeher als 240 Pixel sind,
       werden abgeschnitten */
 }
 .content-aside .flexslider {
-    height: 391px;    
+    height: 391px;   
     margin: 10px auto 20px;
-    
+   
 }
 
 
 .content-aside .flex-control-nav {
-  display: none; 
+  display: none;
 }
 
 
 .flexslider img {
-    /* Kommentare entfernen, wenn man möchte dass die Bilder an die 
+    /* Kommentare entfernen, wenn man möchte dass die Bilder an die
        proportionale Breite angepasst werden und nicht abgeschnitten werden: */
-    
-   /*  max-height: 240px;  
-      width: auto; 
+   
+   /*  max-height: 240px; 
+      width: auto;
    */
 }
 
 .flexslider .slides > li {
-  display: none; 
+  display: none;
 }
 
 .slides:after {
@@ -64,7 +64,7 @@ html[xmlns] .slides {
 }
 
 .flex-direction-nav {
-  display: none; 
+  display: none;
 }
 
 .flex-control-nav {
@@ -72,11 +72,11 @@ html[xmlns] .slides {
   top: 10px;
   right: 62px;
   overflow: hidden;
-  z-index: 800; 
+  z-index: 800;
 }
 .flex-control-nav li {
     float: left;
-    margin-right: 1px; 
+    margin-right: 1px;
 }
 .flex-control-nav li a {
       display: block;
@@ -89,8 +89,8 @@ html[xmlns] .slides {
 .flex-control-nav li a.active,
 .flex-control-nav li a:hover,
 .flex-control-nav li a:focus {
-        background: white; 
-}  
+        background: white;
+} 
 
 
 .content-aside .flexslider .flex-pauseplay,
@@ -106,7 +106,7 @@ html[xmlns] .slides {
     background: white;
     background: rgba(255, 255, 255, 0.8);
     cursor: pointer;
-    color: black; 
+    color: black;
 
 }
 .content-aside .flexslider .flex-pauseplay {
@@ -121,15 +121,15 @@ html[xmlns] .slides {
 .slide .caption  h3 {
   font-size: 22.8px;
   line-height: 22px;
-  margin-left: -5px; 
-   margin-bottom: 0; 
+  margin-left: -5px;
+   margin-bottom: 0;
 }
 .slide .caption h3 a {
     background: #2d7dc5;
-    padding: 2px 5px 0px 5px; 
+    padding: 2px 5px 0px 5px;
 }
 .slide .caption h3 a:hover {
-      background: #ff8800; 
+      background: #ff8800;
 }
 
 .content-aside .slide .caption,
@@ -141,7 +141,7 @@ html[xmlns] .slides {
   bottom: 0;
   right: 0;
   padding: 10px 20px;
-  text-align: right; 
+  text-align: right;
 }
 .content-aside .slide .caption {
     width: 100%;
@@ -149,7 +149,7 @@ html[xmlns] .slides {
 .content-aside .slide .caption p,
 .first-teaser-widget-area .slide .caption p {
     font-size: 12px;
-    margin-bottom: 5px; 
+    margin-bottom: 5px;
     display: inline-block;
     font-size: 18px;
 }
@@ -158,41 +158,41 @@ html[xmlns] .slides {
     background: #2d7dc5;
     color: white;
     display: inline-block;
-    padding: 0 5px; 
+    padding: 0 5px;
 }
 
 
 
-@media only screen and (max-width: 767px) {  
- .symbolbild, 
-  .flexslider, 
+@media only screen and (max-width: 767px) { 
+ .symbolbild,
+  .flexslider,
   .flexslider img {
-        height: 240px;  
+        height: 240px; 
         overflow: hidden;
-   }   
+   }  
    .content-aside .flexslider {
-        height: auto;    
+        height: auto;   
         margin-bottom: 10px;
     }
- 
+
 }
 
-@media only screen and (max-width: 479px) {  
-  .symbolbild, 
-  .flexslider, 
+@media only screen and (max-width: 479px) { 
+  .symbolbild,
+  .flexslider,
   .flexslider img {
-        height: 240px;  
+        height: 240px; 
         overflow: hidden;
-   }   
+   }  
    .content-aside .flexslider {
-        height: auto;    
+        height: auto;   
         margin-bottom: 10px;
     }
 
   .flexslider .caption {
     padding: 5px 10px;
   }
-  .flexslider .caption h2, 
+  .flexslider .caption h2,
   .flexslider .caption h3 {
       font-size: 12px;
       font-family: Helvetica, Arial, sans-serif;

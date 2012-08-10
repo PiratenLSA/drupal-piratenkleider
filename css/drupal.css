@@ -1,10 +1,10 @@
 ul.menu li {
-  margin: 0;
+  margin: 0
 }
 
 #main-content .post-meta ul.links.inline,
 #main-content .post-meta ol.links.inline {
-  margin: 0;
+  margin: 0
 }
 
 #main-content .content-aside ul.menu ul.menu {
@@ -14,5 +14,5 @@ ul.menu li {
 }
 
 .breadcrumb {
-  padding: 0;
+  padding: 0
 }
