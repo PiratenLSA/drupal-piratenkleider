@@ -92,7 +92,7 @@
   </div>
 </div>
 
-<?php if (false && $is_front): ?>
+<?php if ($is_front && $page['slideshow']): ?>
 <div class="section teaser">
   <div class="row">
     <div class="first-teaser-widget-area">
@@ -105,6 +105,20 @@
     </div>
   </div>
 </div>
+
+<script type="text/javascript">
+  /* <![CDATA[ */
+  $(window).load(function() {
+    $('.flexslider').flexslider({
+      slideshowSpeed: 8000,
+      animationDuration: 600,
+      slideDirection: 'horizontal',
+      animation: 'slide',
+      pausePlay: true,
+    });
+  });
+  /* ]]> */
+</script>
 <?php endif; ?>
 
 <div class="section content" id="main-content">

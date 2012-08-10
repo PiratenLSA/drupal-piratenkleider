@@ -26,20 +26,6 @@
 
     <script type="text/javascript">
     /* <![CDATA[ */
-    $(window).load(function() {
-      $('.flexslider').flexslider({
-        slideshowSpeed: 8000,
-        animationDuration: 600,
-        slideDirection: 'horizontal',
-        animation: 'slide',
-        pausePlay: true,
-      });
-    });
-    /* ]]> */
-    </script>
-
-    <script type="text/javascript">
-    /* <![CDATA[ */
       var $htmlOnSwitch = '<div class="switchoff"><a href="#"><img src="<?php print drupal_get_path('theme', 'piratenkleider'); ?>/images/ausblenden.png" width="18" height="18" alt="<?php print t('Leiste ausblenden'); ?>"></a></div>';
       var $htmlOffSwitch = '<div class="switchon" ><a href="#"><img src="<?php print drupal_get_path('theme', 'piratenkleider'); ?>/images/einblenden.png" width="18" height="18" alt="<?php print t('Leiste anzeigen'); ?>"></a></div>';
     /* ]]> */
