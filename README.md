@@ -21,7 +21,7 @@ größtenteils auf bestehende Module zurückgegriffen. Das Modul
 
 ## Installation
 Einfach per Git das Repository "clonen" bzw. herunterladen. Den Ordner in
-"piratenkleider" umbenennen und nach "/sites/all/modules/" verschieben.
+"piratenkleider" umbenennen und nach "/sites/all/themes/" verschieben.
 
 
 ## Features
