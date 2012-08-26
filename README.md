@@ -6,7 +6,7 @@ Dies ist eine Portierung des Piratenkleider Wordpress Themes, erstellt von
 [Korbinian](https://github.com/xwolfde/Piratenkleider) und weitergepflegt von
 [Wolfgang Wiese](https://github.com/xwolfde/Piratenkleider).
 
-## Credits & Copyright
+## Lizenz
 [CC-BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/de/deed.de)
 
 ## Hinweise zur Portierung
@@ -27,14 +27,14 @@ Einfach per Git das Repository "clonen" bzw. herunterladen. Den Ordner in
 ## Features
 
 ### Slider
-Der Slider wurde nicht fest in das Theme eingebaut - es bietet nur die CSS
-Optionen. Hierzu wird am besten das Modul
+Der Slider wurde nicht fest in das Piratenkleider Drupal Theme eingebaut - es
+bietet nur die CSS Optionen. Hierzu wird am besten das Modul
 [Flex Slider](http://drupal.org/project/flexslider) benutzt. Mithilfe der
 "FlexSlider Views Slideshow" kann eine "Ansicht" erstellt und diese als Block
 auf der Startseite als Block eingebunden werden.
 
 Da die manuelle Konfiguration für den Anfänger zu aufwendig ist, wurde ein
-"Feature"-Modul erstellt, der das benötigte "Feld" sowie die "Ansicht"
+"Feature"-Modul erstellt, das das benötigte "Feld" sowie die "Ansicht"
 bereitstellt.
 
 Das Module findet man hier:
