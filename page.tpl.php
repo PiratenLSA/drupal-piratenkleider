@@ -7,7 +7,7 @@
 <div class="section header">
   <div class="row">
     <div class="branding">
-      <a href="<?php print $front_page; ?>" title="<?php print print t('Startseite'); ?>" rel="home" class="logo">
+      <a href="<?php print $front_page; ?>" title="<?php print $site_name; ?>" rel="home" class="logo">
         <h1><img src="<?php print $logo; ?>" alt="<?php print $site_name; ?>" /></h1>
       </a>
     </div>
@@ -105,20 +105,6 @@
     </div>
   </div>
 </div>
-
-<script type="text/javascript">
-  /* <![CDATA[ */
-  $(window).load(function() {
-    $('.flexslider').flexslider({
-      slideshowSpeed: 8000,
-      animationDuration: 600,
-      slideDirection: 'horizontal',
-      animation: 'slide',
-      pausePlay: true,
-    });
-  });
-  /* ]]> */
-</script>
 <?php endif; ?>
 
 <div class="section content" id="main-content">

@@ -6,7 +6,6 @@ version = VERSION
 core = 7.x
 
 scripts[] = js/jquery.min.js
-scripts[] = js/jquery.flexslider-min.js
 scripts[] = js/dynamic-sidebar.js
 scripts[] = js/layout.js
 
