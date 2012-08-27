@@ -3,6 +3,8 @@
  *
  */
 
+(function ($) {
+
 /*
  * Klasse no-js entfernen. Diese Klasse wurde im HTML statisch gesetzt.
  * Mit CSS werden die mit dieser Klasse bezeichneten Bereiche
@@ -46,3 +48,5 @@ $(document).on("focusin", function() {
             };
     }
 });
+
+})(jQuery);

@@ -1,6 +1,9 @@
 /**
  *  Dynamische Sidebar fuer Piratenkleider
 */
+
+(function ($) {
+
 var $cssPrimaryOnHideSidebar = {
     'width' : '100%'
 };
@@ -50,3 +53,4 @@ $(window).ready(function () {
    }
 });
 
+})(jQuery);
