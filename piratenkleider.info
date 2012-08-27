@@ -21,9 +21,23 @@ stylesheets-conditional[lt IE 7][all][] = yaml/core/iehacks.min.css
 
 regions[sticker] = sticker
 regions[slideshow] = slideshow (frontpage only)
-regions[shortlinks] = shortlinks (frontpage only)
 regions[social] = social media
 regions[content] = main content
 regions[sidebar_first] = sidebar
 regions[siteinfo] = siteinfo
 regions[footer] = footer
+
+settings[piratenkleider_teaser1_symbol] = idee
+settings[piratenkleider_teaser1_title] = Informiere dich
+settings[piratenkleider_teaser1_subtitle] = über unsere Themen & Ziele!
+settings[piratenkleider_teaser1_url] = /
+
+settings[piratenkleider_teaser2_symbol] = herz
+settings[piratenkleider_teaser2_title] = Unterstütze uns
+settings[piratenkleider_teaser2_subtitle] = mit deinem Engagement!
+settings[piratenkleider_teaser2_url] = /
+
+settings[piratenkleider_teaser3_symbol] = steuerrad
+settings[piratenkleider_teaser3_title] = Werde Pirat!
+settings[piratenkleider_teaser3_subtitle] = jetzt Mitglied werden!
+settings[piratenkleider_teaser3_url] = /

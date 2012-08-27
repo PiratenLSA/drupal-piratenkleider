@@ -100,7 +100,15 @@
     </div>
     <div class="second-teaser-widget-area">
       <div class="skin">
-        <?php print render($page['shortlinks']); ?>
+        <div class="teaserlinks">
+          <ul>
+            <?php
+              for ($i = 1; $i <= 3; $i++) {
+                print '<li><a href="'.theme_get_setting('piratenkleider_teaser' . $i . '_url').'" class="symbol symbol-'.theme_get_setting('piratenkleider_teaser' . $i . '_symbol').'">'.theme_get_setting('piratenkleider_teaser' . $i . '_title').' <span>'.theme_get_setting('piratenkleider_teaser' . $i . '_subtitle').'</span></a></li>';
+              }
+            ?>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
