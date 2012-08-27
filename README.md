@@ -44,3 +44,18 @@ Nach dem aktivieren muss nur noch der Block "View: Slideshow" zur Region
 "slideshow (frontpage only)" hinzugefügt werden. Es wurde automatisch das Feld
 "sliderimage" dem Inhaltstyp "Artikel" hinzugefügt. Dort kann das Bild, welches
 im Slider angezeigt werden soll hochgeladen werden.
+
+### Teaser Links
+Die drei Teaser Links rechts neben dem Slider sind im Theme fest eingebaut. In
+den Theme-Einstellungen ("/admin/appearance/settings/piratenkleider") kann man
+die Symbole, Texte und die Links ändern.
+
+### Sticker
+Rechts oben unter der Leiste mit den Links gibt es einen Bereich für die
+"Sticker". Diese wurden nicht fest eingebaut, sondern können über einen normalen
+Block eingefügt werden. Empfehlenswert ist es, wenn man eine normale ungeordnete
+HTML Liste benutzt (ul li). Die einzelnen Elemente können per CSS aufgehübscht
+werden. Die CSS-Klasse "gedreht" dreht den Text einen wenig, die CSS-Klasse
+"small" stellt den Text kleiner dar und die CSS-Klasse "cicolor" färbt die graue
+Schrift nach orange. Diese CSS Klassen packt man am besten in "span"-Elementen
+und macht von Zeilenumbrüchen (br) Gebrauch.
