@@ -2727,7 +2727,13 @@ div.ics-calendar-holder .ics-calendar-event {
   display: block;
 }
 
-.nav-top ul.socialmedia {
+.nav-top a.contextual-links-trigger {
+  height: auto;
+  display: none;
+}
+
+.nav-top ul.socialmedia,
+.nav-top .region-social {
   float: left
 }
 
