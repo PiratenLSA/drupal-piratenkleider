@@ -38,7 +38,7 @@ Da die manuelle Konfiguration für den Anfänger zu aufwendig ist, wurde ein
 bereitstellt.
 
 Das Module findet man hier:
-https://github.com/christophlsa/piratenkleider_slider
+https://github.com/PiratenLSA/piratenkleider_slider
 
 Nach dem aktivieren muss nur noch der Block "View: Slideshow" zur Region
 "slideshow (frontpage only)" hinzugefügt werden. Es wurde automatisch das Feld
