@@ -118,24 +118,27 @@
 <div class="section content" id="main-content">
   <div class="row">
     <div class="content-primary">
-      <div class="skin">
-        <div class="post">
-          <?php if ($title): ?>
-            <div class="post-title">
-              <?php if ($action_links): ?>
-              <?php print render($action_links); ?>
-              <?php endif; ?>
-
-              <?php print render($title_prefix); ?>
-              <h1><span><?php print $title ?></span></h1>
-              <?php print render($title_suffix); ?>
-            </div>
+      <?php if ($title): ?>
+        <div style="padding: 20px 0px 0px 20px; margin-left: 10px;"><!-- class="content-header" -->
+          <!-- muh --><?php //print_r($node); ?><!-- kuh -->
+          <?php if ($action_links): ?>
+          <?php print render($action_links); ?>
           <?php endif; ?>
 
-          <?php print $messages; ?>
-          <?php print render($page['help']); ?>
-          <?php print render($page['content']); ?>
+          <?php print render($title_prefix); ?>
+          <h1 id="page-title">
+            <span><?php print $title ?></span>
+          </h1>
+          <?php print render($title_suffix); ?>
         </div>
+      <?php endif; ?>
+
+      <div class="skin">
+        <?php if ($tabs): ?><div class="tabs"><?php print render($tabs); ?></div><?php endif; ?>
+
+        <?php print $messages; ?>
+        <?php print render($page['help']); ?>
+        <?php print render($page['content']); ?>
       </div>
     </div>
 

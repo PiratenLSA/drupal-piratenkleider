@@ -8,6 +8,19 @@
   <?php endif; ?>
   <?php print render($title_suffix); ?>
 
+  <div class="post-info">
+    <div class="commentbubble">
+      <a href="<?php print $node_url; ?>#comments">
+        <?php print $comment_count . '<span class="skip"> ' . format_plural($comment_count, 'comment', 'comments') . '</span>'; ?>
+      </a>
+    </div>
+    <div class="cal-icon">
+      <span class="day"><?php print format_date($created, 'custom', 'j.'); ?></span>
+      <span class="month"><?php print format_date($created, 'custom', 'm.'); ?></span>
+      <span class="year"><?php print format_date($created, 'custom', 'Y'); ?></span>
+    </div>
+  </div>
+
   <div class="post-entry"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.

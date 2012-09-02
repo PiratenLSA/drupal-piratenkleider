@@ -16,3 +16,24 @@ ul.menu li {
 .breadcrumb {
   padding: 0
 }
+
+#main-content ul.tabs {
+  border-color: #CCCCCC;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  margin: 5px 0 30px;
+  padding: 0 10px;
+}
+
+#main-content ul.tabs li.active a,
+#main-content ul.tabs li a:hover {
+  color: black;
+}
+
+#main-content ul.tabs li a {
+  background: none repeat scroll 0 0 #EEEEEE;
+  border: 1px solid #CCCCCC;
+  margin: inherit;
+  padding: 2px 4px;
+  color: #999999;
+}
