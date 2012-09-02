@@ -52,24 +52,7 @@
         <h2 class="skip"><?php print t('Navigation'); ?></h2>
         <?php if ($main_menu): ?>
         <div class="menu-header">
-          <?php
-
-            //print_r($main_menu_expanded);
-
-            print render($main_menu_expanded);
-
-            /*print theme('links__system_main_menu', array(
-                        'links' => $main_menu,
-                        'attributes' => array(
-                          'id' => 'menu-mainmenu',
-                          'class' => array('menu'),
-                        ),
-                        'heading' => array(
-                          'text' => t('Main menu'),
-                          'level' => 'h3',
-                          'class' => array('skip'),
-                        ),
-                      ));*/ ?>
+          <?php print render($main_menu_expanded); ?>
         </div>
         <?php endif; ?>
     </div>
@@ -119,8 +102,7 @@
   <div class="row">
     <div class="content-primary">
       <?php if ($title): ?>
-        <div style="padding: 20px 0px 0px 20px; margin-left: 10px;"><!-- class="content-header" -->
-          <!-- muh --><?php //print_r($node); ?><!-- kuh -->
+        <div style="padding: 20px 0px 0px 20px; margin-left: 10px;"><!-- change back for article image implemenation: class="content-header" -->
           <?php if ($action_links): ?>
           <?php print render($action_links); ?>
           <?php endif; ?>
