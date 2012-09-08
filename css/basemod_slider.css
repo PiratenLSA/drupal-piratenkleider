@@ -8,11 +8,54 @@
 * @Author URI: http://www.xwolf.de
 */
 
-.flex-direction-nav {
+#main-content .flex-nav-container ul,
+#main-content .flex-nav-container ol {
+  list-style: none;
+  margin: 0;
+}
+
+#main-content .flex-nav-container ul li,
+#main-content .flex-nav-container ol li {
+  margin: 0;
+}
+
+.region-content .flex-direction-nav a {
+  background: url("../images/slidernavarrows.png") no-repeat scroll 0 0 transparent;
+  cursor: pointer;
+  display: block;
+  height: 30px;
+  margin: -20px 0 0;
+  opacity: 0;
+  position: absolute;
+  text-indent: -9999px;
+  top: 50%;
+  width: 30px;
+}
+.region-content .flex-direction-nav .next {
+    background-position: 100% 0;
+    right: -36px;
+}
+.region-content .flex-direction-nav .prev {
+    left: -36px;
+}
+.region-content .flex-nav-container:hover .next {
+    opacity: 1;
+    right: 5px;
+}
+.region-content .flex-nav-container:hover .prev {
+    left: 5px;
+    opacity: 1;
+}
+.region-content .flex-direction-nav .disabled {
+    cursor: default;
+    opacity: 0.3 !important;
+}
+
+.region-slideshow .flex-direction-nav {
   display: none;
 }
 
-.flex-control-nav {
+.region-slideshow .flex-control-nav {
   top: 10px;
   overflow: hidden;
   z-index: 200;
@@ -21,12 +64,12 @@
   right: 62px;
 }
 
-.flex-control-nav li {
+.region-slideshow .flex-control-nav li {
   float: left;
   margin: 0 0 0 1px;
 }
 
-.flex-control-nav li a {
+.region-slideshow .flex-control-nav li a {
   display: block;
   padding: 0px 5px;
   background: white;
@@ -38,13 +81,13 @@
   text-indent: 0;
 }
 
-.flex-control-nav li a.active,
-.flex-control-nav li a:hover,
-.flex-control-nav li a:focus {
+.region-slideshow .flex-control-nav li a.active,
+.region-slideshow .flex-control-nav li a:hover,
+.region-slideshow .flex-control-nav li a:focus {
   background: white;
 }
 
-.flex-pauseplay {
+.region-slideshow .flex-pauseplay {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -59,22 +102,22 @@
   color: black;
 }
 
-.flex-pauseplay:hover,
-.flex-pauseplay:focus {
+.region-slideshow .flex-pauseplay:hover,
+.region-slideshow .flex-pauseplay:focus {
   background: white;
 }
 
-.flexslider {
+.region-slideshow .flexslider {
   border: 0;
   border-radius: 0;
 }
 
-.flex-caption {
+.region-slideshow .flex-caption {
   font-size: 20px;
   line-height: 22px;
 }
 
-.flex-caption a {
+.region-slideshow .flex-caption a {
   background: none repeat scroll 0 0 #2D7DC5;
   color: white;
   padding: 0 5px;
@@ -83,8 +126,8 @@
 
 @media only screen and (max-width: 767px) {
  .symbolbild,
-  .flexslider,
-  .flexslider img {
+  .region-slideshow .flexslider,
+  .region-slideshow .flexslider img {
         height: 240px;
         overflow: hidden;
    }
@@ -96,22 +139,22 @@
 }
 
 @media only screen and (max-width: 479px) {
-  .symbolbild,
-  .flexslider,
-  .flexslider img {
+ .symbolbild,
+  .region-slideshow .flexslider,
+  .region-slideshow .flexslider img {
         height: 240px;
         overflow: hidden;
    }
-   .content-aside .flexslider {
+   .region-slideshow .content-aside .flexslider {
         height: auto;
         margin-bottom: 10px;
     }
 
-  .flexslider .flex-caption {
+  .region-slideshow .flexslider .flex-caption {
     padding: 5px 10px;
   }
-  .flexslider .flex-caption h2,
-  .flexslider .flex-caption h3 {
+  .region-slideshow .flexslider .flex-caption h2,
+  .region-slideshow .flexslider .flex-caption h3 {
       font-size: 12px;
       font-family: Helvetica, Arial, sans-serif;
       letter-spacing: 0px;

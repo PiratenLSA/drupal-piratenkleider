@@ -1,7 +1,7 @@
 <?php
 
 function piratenkleider_form_system_theme_settings_alter (&$form, $form_state) {
-  require_once(dirname(__FILE__) . '/inc/constants.php');
+  require(dirname(__FILE__) . '/inc/constants.php');
 
   for ($i = 1; $i <= 3; $i++) {
     $form['teaser' . $i] = array(

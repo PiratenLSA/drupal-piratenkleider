@@ -12,7 +12,7 @@
     <!--[if IE]> <meta http-equiv="X-UA-Compatible" content="IE=9"> <![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="apple-touch-icon" href="<?php print drupal_get_path('theme', 'piratenkleider'); ?>/apple-touch-icon.png">
+    <link rel="apple-touch-icon" href="<?php print base_path() . drupal_get_path('theme', 'piratenkleider'); ?>/apple-touch-icon.png">
     <link rel="profile" href="http://gmpg.org/xfn/11" />
 
     <?php print $styles; ?>
