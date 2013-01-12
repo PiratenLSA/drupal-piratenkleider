@@ -3,6 +3,12 @@
 function piratenkleider_form_system_theme_settings_alter (&$form, $form_state) {
   require(dirname(__FILE__) . '/inc/constants.php');
 
+  $form['piratenkleider_teaserlinks'] = array(
+    '#type' => 'checkbox',
+    '#title' => t('Teaserlinks auf der Startseite in der rechten Spalte anzeigen?'),
+    '#default_value' => theme_get_setting('piratenkleider_teaserlinks'),
+  );
+
   for ($i = 1; $i <= 3; $i++) {
     $form['teaser' . $i] = array(
       '#type' => 'fieldset',

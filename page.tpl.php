@@ -75,32 +75,13 @@
   </div>
 </div>
 
-<?php if ($is_front && $page['slideshow']): ?>
-<div class="section teaser">
-  <div class="row">
-    <div class="first-teaser-widget-area">
-      <?php print render($page['slideshow']); ?>
-    </div>
-    <div class="second-teaser-widget-area">
-      <div class="skin">
-        <div class="teaserlinks">
-          <ul>
-            <?php
-              for ($i = 1; $i <= 3; $i++) {
-                print '<li><a href="'.theme_get_setting('piratenkleider_teaser' . $i . '_url').'" class="symbol symbol-'.theme_get_setting('piratenkleider_teaser' . $i . '_symbol').'">'.theme_get_setting('piratenkleider_teaser' . $i . '_title').' <span>'.theme_get_setting('piratenkleider_teaser' . $i . '_subtitle').'</span></a></li>';
-              }
-            ?>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-<?php endif; ?>
-
 <div class="section content" id="main-content">
   <div class="row">
     <div class="content-primary">
+      <?php if ($is_front && $page['slideshow']): ?>
+        <?php print render($page['slideshow']); ?>
+      <?php endif; ?>
+
       <?php if ($title): ?>
         <div style="padding: 20px 0px 0px 20px; margin-left: 10px;"><!-- change back for article image implemenation: class="content-header" -->
           <?php if ($action_links): ?>
@@ -125,6 +106,20 @@
     </div>
 
     <div class="content-aside">
+      <?php if ($is_front && theme_get_setting('piratenkleider_teaserlinks') == 1): ?>
+        <div class="teaserskin">
+          <div class="teaserlinks">
+            <ul>
+              <?php
+                for ($i = 1; $i <= 3; $i++) {
+                  print '<li><a href="'.theme_get_setting('piratenkleider_teaser' . $i . '_url').'" class="symbol symbol-'.theme_get_setting('piratenkleider_teaser' . $i . '_symbol').'">'.theme_get_setting('piratenkleider_teaser' . $i . '_title').' <span>'.theme_get_setting('piratenkleider_teaser' . $i . '_subtitle').'</span></a></li>';
+                }
+              ?>
+            </ul>
+          </div>
+        </div>
+      <?php endif; ?>
+
       <div class="skin">
         <h1 class="skip"><?php print t('Weitere Informationen'); ?></h1>
         <?php print render($page['sidebar_first']); ?>

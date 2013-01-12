@@ -23,7 +23,7 @@ $(window).load(function () {
  * zu definieren.
  */
 
-$(document).on("focusin", function() {
+$(document).live("focusin", function() {
     var menuLayers = 5; //Anzahl der Menue-Ebenen
     var links = document.getElementById('nav').getElementsByTagName('a');
 

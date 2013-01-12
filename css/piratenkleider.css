@@ -360,14 +360,14 @@ caption, th, thead, legend {
   font-weight: normal
 }
 
-tr:hover {
+/*tr:hover {
   background: rgba(0, 0, 0, 0.02);
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-}
+}*/
 
 th, td {
   text-align: left;
@@ -433,11 +433,22 @@ input[type="checkbox"] {
   vertical-align: baseline
 }
 
-input[type="text"], input[type="password"], input[type="select"], input[type="search"], input[type="file"], input[type="submit"], input[type="reset"], input[type="button"] {
+input[type="text"],
+input[type="password"],
+input[type="select"],
+input[type="search"],
+input[type="file"],
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+input[type="email"],
+input[type="tel"] {
   margin: 0 5px 5px 0
 }
 
-input[type="text"] {
+input[type="text"],
+input[type="email"],
+input[type="tel"] {
   padding: 5px
 }
 
@@ -1103,11 +1114,13 @@ ul.socialmedia li a:focus img {
   width: 100%;
 }
 
-.second-teaser-widget-area .skin {
-  padding: 10px
+.teaserskin {
+  background: none repeat fixed -20% 0px rgba(0, 0, 0, 0.3);
+  margin: 0px;
+  padding: 11px 10px 15px 20px;
 }
 
-.second-teaser-widget-area li {
+.teaserlinks li {
   margin-bottom: 1px;
   background: orange;
   border-radius: 2px;
@@ -1122,7 +1135,7 @@ ul.socialmedia li a:focus img {
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-.second-teaser-widget-area li a {
+.teaserlinks li a {
   padding: 1em 10px 1em 20px;
   list-style: none outside none;
   border: 0px solid;
@@ -1132,7 +1145,7 @@ ul.socialmedia li a:focus img {
   text-shadow: 0 0 0;
 }
 
-.second-teaser-widget-area li a div {
+.teaserlinks li a div {
   color: black;
   font-family: "BebasNeueRegular", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
@@ -1140,14 +1153,15 @@ ul.socialmedia li a:focus img {
   font-size: 19px;
 }
 
-.second-teaser-widget-area li a:focus,
-.second-teaser-widget-area li a:hover {
+.teaserlinks li a:focus,
+.teaserlinks li a:hover {
   background: #c96a00;
   background: rgba(0, 0, 0, 0.2);
   color: white;
+  text-decoration: none;
 }
 
-.second-teaser-widget-area .textwidget {
+.teaserlinks .textwidget {
   margin-bottom: 1px;
   background: orange;
   border-radius: 2px;
@@ -1168,29 +1182,29 @@ ul.socialmedia li a:focus img {
   text-shadow: 0 0 0;
 }
 
-.second-teaser-widget-area li.recentcomments {
+.teaserlinks li.recentcomments {
   color: white;
   font-style: italic;
   padding-left: 10px;
 }
 
-.second-teaser-widget-area li.recentcomments a {
+.teaserlinks li.recentcomments a {
   font-style: normal;
   padding: 0.3em 10px 0.5em 20px;
 }
 
-.teaserlinks ul {
+#main-content .content-aside .teaserlinks ul {
   margin: 0;
   padding: 0;
 }
 
-.teaserlinks ul li {
+#main-content .content-aside .teaserlinks ul li {
   margin: 0;
   padding: 0;
   min-height: 70px;
 }
 
-.teaserlinks ul li {
+#main-content .content-aside .teaserlinks ul li {
   background: none repeat scroll 0 0 orange;
   border-radius: 2px 2px 2px 2px;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
@@ -1198,7 +1212,7 @@ ul.socialmedia li a:focus img {
   margin-bottom: 1px;
 }
 
-.teaserlinks ul li a {
+#main-content .content-aside .teaserlinks ul li a {
   color: white;
   font-family: "BebasNeueRegular", Helvetica, Arial, sans-serif;
   letter-spacing: 1px;
@@ -1215,8 +1229,8 @@ ul.socialmedia li a:focus img {
   transition: all 0.3s ease-in-out;
 }
 
-.teaserlinks ul li a:hover,
-.teaserlinks ul li a:focus {
+#main-content .content-aside .teaserlinks ul li a:hover,
+#main-content .content-aside .teaserlinks ul li a:focus {
   -webkit-transition: all 0.2s ease-in-out;
   -moz-transition: all 0.2s ease-in-out;
   -ms-transition: all 0.2s ease-in-out;
@@ -1227,7 +1241,7 @@ ul.socialmedia li a:focus img {
   background: none repeat scroll 0 0 orange;
 }
 
-.teaserlinks ul li a span {
+#main-content .content-aside .teaserlinks ul li a span {
   padding-top: 4px;
   font-size: 16px;
   display: block;
@@ -1236,8 +1250,8 @@ ul.socialmedia li a:focus img {
   font-family: Helvetica, Arial, sans-serif;
 }
 
-.teaserlinks ul li a:hover span,
-.teaserlinks ul li a:focus span {
+#main-content .content-aside .teaserlinks ul li a:hover span,
+#main-content .content-aside .teaserlinks ul li a:focus span {
   color: black
 }
 
@@ -1254,17 +1268,18 @@ ul.socialmedia li a:focus img {
 
 #main-content p,
 #main-content form {
-  margin-bottom: 18px
+  margin-top: 9px;
+  margin-bottom: 9px;
 }
 
-.content img {
+/*.content img {
   margin: 0 10px 10px 0
 }
 
 .content img.aligncenter {
   display: block;
   margin: 10px auto;
-}
+}*/
 
 #main-content ul {
   margin: 0 0 18px 25px
@@ -1315,13 +1330,17 @@ ul.socialmedia li a:focus img {
   margin: 0 0 0 5px
 }
 
+.content-aside .block {
+  padding-top: 10px;
+  padding-bottom: 10px;
+} 
+
 #main-content .content-aside p,
-#main-content 
-.content-aside table,
-#main-content 
-.content-aside blockquote,
+#main-content .content-aside table,
+#main-content .content-aside blockquote,
 #main-content .content-aside form {
-  margin-bottom: 20px
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 #main-content .content-aside ul,
@@ -1411,6 +1430,8 @@ ul.socialmedia li a:focus img {
 }
 
 .content-primary input[type="text"],
+.content-primary input[type="email"],
+.content-primary input[type="tel"],
 .content-primary select,
 .content-primary textarea {
   border: 1px solid silver;
@@ -1420,7 +1441,11 @@ ul.socialmedia li a:focus img {
 .content-primary input[type="text"]:hover,
 .content-primary textarea:hover,
 .content-primary input[type="text"]:focus,
-.content-primary textarea:focus {
+.content-primary textarea:focus,
+.content-primary input[type="email"]:hover,
+.content-primary input[type="email"]:focus,
+.content-primary input[type="tel"]:hover,
+.content-primary input[type="tel"]:focus {
   border: 1px solid black;
   background-color: beige;
 }
@@ -2164,12 +2189,12 @@ ul.socialmedia li a:focus img {
 }
 
 .content-aside a {
-  color: black;
-  padding: 0 2px;
+  color: #0066CC;
+/*  padding: 0 2px; */
 }
 
 .content-aside a:hover {
-  color: #000;
+  /*color: #000;*/
   /* background: #d97300;  */
   text-decoration: underline;
 }
@@ -2296,8 +2321,7 @@ ul.socialmedia li a:focus img {
   background: #2d7dc5;
 }
 
-#main-content .content-aside ul.menu li.current_page_item > a,
-#main-content .content-aside ul.menu li.current-menu-item > a {
+#main-content .content-aside ul.menu li a.active-trail {
   background: #2d7dc5 url("../assets/plus-left.gif") center left no-repeat;
   color: white;
   padding-left: 14px;
@@ -2877,6 +2901,7 @@ div.ics-calendar-holder .ics-calendar-event {
 .content-aside .skin {
   background: #ff8800;
   background: rgba(255, 136, 0, 0.7);
+  padding: 5px 10px 10px;
 }
 
 .columns .column1 {

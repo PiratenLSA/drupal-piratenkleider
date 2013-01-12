@@ -13,7 +13,7 @@ stylesheets[all][] = css/piratenkleider.css
 stylesheets[all][] = css/basemod_navigation.css
 stylesheets[all][] = css/basemod_slider.css
 stylesheets[all][] = css/basemod_mediaqueries.css
-stylesheets[all][] = css/basemod_linkicons.css
+#stylesheets[all][] = css/basemod_linkicons.css
 stylesheets[all][] = css/basemod_ymbuttons.css
 stylesheets[all][] = css/drupal.css
 stylesheets[print][] = css/print.css
@@ -26,6 +26,8 @@ regions[content] = main content
 regions[sidebar_first] = sidebar
 regions[siteinfo] = siteinfo
 regions[footer] = footer
+
+settings[piratenkleider_teaserlinks] = 1
 
 settings[piratenkleider_teaser1_symbol] = idee
 settings[piratenkleider_teaser1_title] = Informiere dich
